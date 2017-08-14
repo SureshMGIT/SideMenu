@@ -210,7 +210,7 @@ class ViewController: UIViewController,MenuSelection {
     func resetSideMenu(){
         var tVal=self.view.frame.size.width-reduceWidth
         tVal = -tVal
-        UIView.animate(withDuration: 0.1, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             
             self.sideMenUView?.frame.origin.x = tVal
             self.viewBackground.alpha=0
@@ -226,7 +226,7 @@ class ViewController: UIViewController,MenuSelection {
    
     func showSideMenu(){
         
-        UIView.animate(withDuration: 0.1, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             
             self.sideMenUView?.frame.origin.x = 0
             self.viewBackground.alpha=1.0
